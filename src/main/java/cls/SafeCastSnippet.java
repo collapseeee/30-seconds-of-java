@@ -30,6 +30,10 @@ import java.util.Optional;
  * SafeCastSnippet.
  */
 public class SafeCastSnippet {
+  private SafeCastSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Safely casts an object to the specified type.

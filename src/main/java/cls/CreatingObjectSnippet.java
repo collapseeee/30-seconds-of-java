@@ -30,6 +30,10 @@ import java.lang.reflect.InvocationTargetException;
  * CreatingObjectSnippet.
  */
 public class CreatingObjectSnippet {
+  private CreatingObjectSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Create object using reflection.
