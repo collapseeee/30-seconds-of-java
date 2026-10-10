@@ -24,10 +24,9 @@
 
 package algorithm;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Tests for VerhoeffSnippet.
@@ -64,8 +63,7 @@ class VerhoeffSnippetTest {
 
     // Generate a Verhoeff check digit
     String checkDigit = VerhoeffSnippet.generateVerhoeff(baseInput);
-    assertTrue("9".equals(checkDigit),
-            "Expected check digit to be 9 for input " + baseInput + ", but got " + checkDigit);
+      assertEquals("9", checkDigit, "Expected check digit to be 9 for input " + baseInput + ", but got " + checkDigit);
 
     // Combine and validate
     String fullInput = baseInput + checkDigit;
