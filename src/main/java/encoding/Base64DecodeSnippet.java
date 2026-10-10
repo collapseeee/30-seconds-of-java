@@ -30,6 +30,10 @@ import java.util.Base64;
  * Base64DecodeSnippet.
  */
 public class Base64DecodeSnippet {
+  private Base64DecodeSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Decodes a Base64 encoded string to the actual representation.

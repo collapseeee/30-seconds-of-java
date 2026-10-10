@@ -31,6 +31,10 @@ import java.util.concurrent.Executors;
  * ThreadPool.
  */
 public class ThreadPool {
+  private ThreadPool() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Creates pool of threads. Where the pool is the size of the number of processors

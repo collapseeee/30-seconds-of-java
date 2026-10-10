@@ -32,6 +32,10 @@ import java.time.temporal.ChronoUnit;
  */
 
 public class DateDifferenceSnippet {
+  private DateDifferenceSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
   * This function calculates the number of years between two LocalDate objects.

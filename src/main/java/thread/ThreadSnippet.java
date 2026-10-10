@@ -28,6 +28,10 @@ package thread;
  * ThreadSnippet.
  */
 public class ThreadSnippet {
+  private ThreadSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Creates and returns a new thread with the task assigned to it
