@@ -28,6 +28,10 @@ package algorithm;
  * BinarySearchIn2dArraySnippet.
  */
 public class BinarySearchIn2dArraySnippet {
+  private BinarySearchIn2dArraySnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
   * Search an item with binarySearch algorithm.

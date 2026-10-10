@@ -28,6 +28,10 @@ package algorithm;
  * InsertionSortSnippet.
  */
 public class InsertionSortSnippet {
+  private InsertionSortSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Sort an array with insertionSort algorithm.

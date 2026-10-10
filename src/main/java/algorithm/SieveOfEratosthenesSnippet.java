@@ -24,10 +24,16 @@
 
 package algorithm;
 
+import java.util.Arrays;
+
 /**
  * SieveOfEratosthenesSnippet.
  */
 public class SieveOfEratosthenesSnippet {
+  private SieveOfEratosthenesSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
   /**
    * Search an item with binarySearch algorithm.
    *
@@ -36,12 +42,10 @@ public class SieveOfEratosthenesSnippet {
    */
   public static boolean[] sieveOfEratosthenes(int n) {
     boolean[] isPrime = new boolean[n + 1];
-    for (int i = 0; i < isPrime.length; i++) {
-      isPrime[i] = true;
-    }
+      Arrays.fill(isPrime, true);
 
     for (int i = 2; i * i <= n; i++) {
-      if (isPrime[i] == true) {
+      if (isPrime[i]) {
         for (int j = i * i; j <= n; j += i) {
           isPrime[j] = false;
         }

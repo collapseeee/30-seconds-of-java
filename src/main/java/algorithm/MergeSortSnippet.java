@@ -27,7 +27,11 @@ package algorithm;
 /**
  * MergeSortSnippet.
  */
-public class MergeSortSnippet {  
+public class MergeSortSnippet {
+  private MergeSortSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
   /**
      * Sort an array with qmergesort algorithm.
      *

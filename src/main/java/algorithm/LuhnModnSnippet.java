@@ -28,6 +28,10 @@ package algorithm;
  * LuhnModnSnippet.
  */
 public class LuhnModnSnippet {
+  private LuhnModnSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   private static final String CODE_POINTS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
