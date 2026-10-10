@@ -27,9 +27,9 @@ checkstyle {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "iluwatar_30-seconds-of-java"
-        property "sonar.organization", "iluwatar"
-        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.projectKey", "se327-30seconds-of-java"
+        property "sonar.projectName", "se327-30seconds-of-java"
+        property "sonar.host.url", "http://localhost:9000"
         property "sonar.coverage.jacoco.xmlReportPaths", "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
     }
 }
