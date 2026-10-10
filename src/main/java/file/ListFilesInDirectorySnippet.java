@@ -30,6 +30,10 @@ import java.io.File;
  * ListFilesInDirectorySnippet.
  */
 public class ListFilesInDirectorySnippet {
+  private ListFilesInDirectorySnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * List files in directory.
