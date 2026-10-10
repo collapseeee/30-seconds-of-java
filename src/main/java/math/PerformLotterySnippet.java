@@ -31,6 +31,10 @@ import java.util.Collections;
  * PerformLotterySnippet.
  */
 public class PerformLotterySnippet {
+  private PerformLotterySnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Generate random lottery numbers.

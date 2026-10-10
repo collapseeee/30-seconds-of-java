@@ -28,6 +28,10 @@ package math;
  * EvenOdd.
  */
 public class EvenOdd {
+  private EvenOdd() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Returns string denoting number is odd or even.

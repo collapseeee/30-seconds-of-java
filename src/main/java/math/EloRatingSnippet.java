@@ -28,6 +28,10 @@ package math;
  * EloRatingSnippet.
  */
 public class EloRatingSnippet {
+  private EloRatingSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   static final int BASE = 400; //Two types are popular - 400 and 480. We will choose 400 here
   static final int RATING_ADJUSTMENT_FACTOR = 32; //32 is the standard for Beginner Games
@@ -47,8 +51,7 @@ public class EloRatingSnippet {
     double logisticDiff = Math.pow(10, ratingDiff);
     double firstPlayerExpectedScore = 1.0 / (1 + logisticDiff);
     double firstPlayerActualScore = result;
-    double newRating = firstPlayerRating + RATING_ADJUSTMENT_FACTOR * (firstPlayerActualScore 
-                       - firstPlayerExpectedScore);
-    return newRating;
+    return firstPlayerRating + RATING_ADJUSTMENT_FACTOR * (firstPlayerActualScore
+            - firstPlayerExpectedScore);
   }
 }

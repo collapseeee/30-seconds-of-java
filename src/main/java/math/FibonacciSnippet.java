@@ -31,6 +31,10 @@ import java.util.List;
  * FibonacciSnippet.
  */
 public class FibonacciSnippet {
+  private FibonacciSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Recursive Fibonacci series. Works only for small n and is spectacularly inefficient

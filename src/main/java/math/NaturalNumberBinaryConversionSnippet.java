@@ -33,6 +33,10 @@ import java.util.stream.Stream;
  * NaturalNumberBinaryConversionSnippet.
  */
 public class NaturalNumberBinaryConversionSnippet {
+  private NaturalNumberBinaryConversionSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Convert natural number to binary string. Only supports positive integers.Throws exception
