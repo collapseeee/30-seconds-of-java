@@ -30,6 +30,9 @@ import java.util.Arrays;
  * ArrayModeSnippet.
  */
 public class ArrayModeInPlaceSnippet {
+  private ArrayModeInPlaceSnippet() {
+
+  }
 
   /**
   * Returns the mode of the array.
