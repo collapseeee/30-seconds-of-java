@@ -39,14 +39,23 @@ class QuickSortSnippetTest {
    */
   @Test
   void testQuickSort() {
-    var arr = new int[] {7, 13, 3, 1, 8, 5};
-    QuickSortSnippet.quickSort(arr, 0, arr.length - 1);
-    assertEquals(6, arr.length);
-    assertEquals(1, arr[0]);
-    assertEquals(3, arr[1]);
-    assertEquals(5, arr[2]);
-    assertEquals(7, arr[3]);
-    assertEquals(8, arr[4]);
-    assertEquals(13, arr[5]);
+    var arr1 = new int[] {7, 13, 3, 1, 8, 5};
+    QuickSortSnippet.quickSort(arr1, 0, arr1.length - 1);
+    assertEquals(6, arr1.length);
+    assertEquals(1, arr1[0]);
+    assertEquals(3, arr1[1]);
+    assertEquals(5, arr1[2]);
+    assertEquals(7, arr1[3]);
+    assertEquals(8, arr1[4]);
+    assertEquals(13, arr1[5]);
+
+    var arr2 = new int[] {10, 8, 6, 4, 2};
+    QuickSortSnippet.quickSort(arr2, 0, arr2.length - 1);
+    assertEquals(5, arr2.length);
+    assertEquals(2, arr2[0]);
+    assertEquals(4, arr2[1]);
+    assertEquals(6, arr2[2]);
+    assertEquals(8, arr2[3]);
+    assertEquals(10, arr2[4]);
   }
 }
