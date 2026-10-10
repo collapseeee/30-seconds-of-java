@@ -31,6 +31,10 @@ import java.util.Locale;
  */
 
 public class FormatBytesSnippet {
+  private FormatBytesSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * Convert bytes into Human readable form.

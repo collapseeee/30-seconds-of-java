@@ -28,6 +28,10 @@ package string;
  * MaxCharacterCountSnippet.
  */
 public class MaxCharacterCountSnippet {
+  private MaxCharacterCountSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
 
   /**
    * The maximum count of times a specific character appears in a string.
