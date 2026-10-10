@@ -42,11 +42,19 @@ class GetAllFieldNamesSnippetTest {
     class SuperClass {
       public int superFieldOne;
       private int superFieldTwo;
+
+        public int getSuperFieldTwo() {
+            return superFieldTwo;
+        }
     }
 
     class TestClass extends SuperClass {
       public int fieldOne;
       private int fieldTwo;
+
+        public int getFieldTwo() {
+            return fieldTwo;
+        }
     }
 
     var list = GetAllFieldNamesSnippet.getAllFieldNames(TestClass.class);
