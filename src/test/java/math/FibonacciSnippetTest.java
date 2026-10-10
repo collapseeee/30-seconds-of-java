@@ -56,7 +56,6 @@ class FibonacciSnippetTest {
    */
   @Test
   void testFibonacciBig() {
-    // assertEquals(0, FibonacciSnippet.fibonacciBig(0));
     assertEquals(1, FibonacciSnippet.fibonacciBig(1));
     assertEquals(1, FibonacciSnippet.fibonacciBig(2));
     assertEquals(2, FibonacciSnippet.fibonacciBig(3));
