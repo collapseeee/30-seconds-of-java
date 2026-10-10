@@ -43,5 +43,41 @@ class BinarySearchIn2dArraySnippetTest {
     int[][] arr2 = {{3, 4, 7, 9}, {12, 24, 26, 29}, {34, 55, 88, 99}, {100, 189, 232, 234}};
     int[] ans2 = {-1, -1};
     Assertions.assertArrayEquals(ans2, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr2, 69));
+
+    // rows == 1
+    int[][] arr3 = {{3, 4, 7, 9}, {12, 24, 26, 29}};
+    int[] ans3 = {-1, -1};
+    Assertions.assertArrayEquals(ans3, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr3, 69));
+
+    int[][] arr4 = {{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15}};
+    // matrix[rmid][cmid] == target
+    int[] ans4 = {1, 2};
+    Assertions.assertArrayEquals(ans4, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr4, 8));
+
+    // matrix[rstart][cmid] == target
+    int[] ans5 = {0, 2};
+    Assertions.assertArrayEquals(ans5, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr4, 3));
+
+    // matrix[rend][cmid] == target
+    int[] ans6 = {2, 2};
+    Assertions.assertArrayEquals(ans6, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr4, 13));
+
+    // target <= matrix[rstart][cmid - 1]
+    int[] ans7 = {0, 0};
+    Assertions.assertArrayEquals(ans7, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr4, 1));
+
+    int[][] arr5 = {{1, 2, 3}, {4, 10, 50}, {20, 30, 40}};
+    // target <= matrix[rend][cmid - 1]
+    int[] ans8 = {2, 0};
+    Assertions.assertArrayEquals(ans8, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr5, 20));
+
+    // target <= matrix[rend][cmid + 1]
+    int[] ans9 = {2, 2};
+    Assertions.assertArrayEquals(ans9, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr5, 40));
+
+    // else
+    int[] ans10 = {-1, -1};
+    Assertions.assertArrayEquals(ans10, BinarySearchIn2dArraySnippet.binarySearchIn2darr(arr5, 45));
+
   }
 }
