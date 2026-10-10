@@ -30,6 +30,10 @@ import java.util.Arrays;
   * FindMinSnippet.
   */
 public class FindMinSnippet {
+  private FindMinSnippet() {
+    /* This utility class should not be instantiated */
+  }
+
  
   /**
     * Returns the minimum integer from the array using reduction.
